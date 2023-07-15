@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 	int i, counter;
 	char tempc;
 
-	i = 0, counter
+	i = 0, counter;
 		if (format == NULL)
 			return (-1);
 	va_start(list, format[i])
