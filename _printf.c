@@ -29,7 +29,7 @@ int _printf(const char *format, ...)
 			counter = counter + checkFormat(tempc, list);
 		}
 		else
-			cprinted = cprinted + print_char2(format[i]);
+			counter = counter + print_char2(format[i]);
 		i++;
 	}
 	va_end(list);
