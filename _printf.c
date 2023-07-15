@@ -13,10 +13,10 @@ int _printf(const char *format, ...)
 	int i, counter;
 	char tempc;
 
-	i = 0, counter;
+	i = 0; counter = 0;
 		if (format == NULL)
 			return (-1);
-	va_start(list, format[i])
+	va_start(list, format[i]);
 	while (format && format[i])
 	{
 		tempc = format[i];
