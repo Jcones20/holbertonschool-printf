@@ -20,7 +20,7 @@ int _printf(const char * const format, ...)
 			
 		return (-1);
 	
-	va_list(list, format);
+	va_start(list, format);
 	
 	while (format && format[i])
 	{
