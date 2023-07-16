@@ -15,9 +15,13 @@ int _printf(const char * const format, ...)
 	char tempc;
 
 	i = 0; cprinted = 0;
-		if (format == NULL)
-			return (-1);
-	va_start(list, format[i]);
+		
+	if (format == NULL)
+			
+		return (-1);
+	
+	va_list(list, format);
+	
 	while (format && format[i])
 	{
 		tempc = format[i];
