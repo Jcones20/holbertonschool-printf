@@ -1,7 +1,7 @@
 #include "main.h"
 #include <limits.h>
 #include <stdio.h>
-
+int checkFormat(char tempc, va_list list);
 /**
  * _printf - Prints the values given with a separator
  * @format: The value to be printed
