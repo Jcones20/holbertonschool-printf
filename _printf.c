@@ -3,11 +3,10 @@
 #include <stdio.h>
 
 /**
- * _printf - Prints the values given with a function
- * Description: 
+ * _printf - Prints the values given with a separator
  * @format: The value to be printed
  *
- * Return:Returns the number of characters printed or -1
+ * Return: Returns the number of characters printed or -1
  */
 int _printf(const char * const format, ...)
 {
@@ -15,7 +14,7 @@ int _printf(const char * const format, ...)
 	int i, cprinted;
 	char tempc;
 
-	i = 0; counter = 0;
+	i = 0; cprinted = 0;
 		if (format == NULL)
 			return (-1);
 	va_start(list, format[i]);
