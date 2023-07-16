@@ -9,10 +9,10 @@
  *
  * Return:Returns the number of characters printed or -1
  */
-int _printf(const char *format, ...)
+int _printf(const char * const format, ...)
 {
 	va_list list;
-	int i, counter;
+	int i, cprinted;
 	char tempc;
 
 	i = 0; counter = 0;
@@ -28,13 +28,13 @@ int _printf(const char *format, ...)
 			tempc = format[i];
 			if (tempc == '\0')
 				return (-1);
-			counter = counter + checkFormat(tempc, list);
+			cprinted = cprinted + checkFormat(tempc, list);
 		}
 		else
-			counter = counter + print_char2(format[i]);
+			cprinted = cprinted + print_char2(format[i]);
 		i++;
 	}
 	va_end(list);
-	return (counter);
+	return (cprinted);
 	
 }
